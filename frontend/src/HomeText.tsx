@@ -9,7 +9,7 @@ import {
 const homeText = () => {
   return (
     <div className="flex w-full h-full flex-col">
-      <div className="bg-gradient-to-b from-[#F0E7DA] to-[#EDDECA] flex justify-center items-center flex-col 2xl:pt-20 xl:pt-8 lg:pt-6 md:pt-4">
+      <div className="bg-gradient-to-b from-[#F0E7DA] to-[#EDDECA] flex justify-center items-center flex-col 2xl:pt-20 xl:pt-12 lg:pt-10 md:pt-6">
         <h2 className="text-[#800980] text-3xl font-bold  sm:py-[20px]">
           SERVICES
         </h2>
