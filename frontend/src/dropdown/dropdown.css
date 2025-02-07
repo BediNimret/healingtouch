@@ -1,0 +1,28 @@
+@media only screen and (max-width: 750px) {
+  .ant-dropdown .ant-dropdown-menu {
+    overflow: hidden !important;
+    list-style-type: none;
+    background-clip: padding-box;
+    margin: 0px !important;
+    width: 150% !important;
+    padding: 0px !important;
+    border-radius: 0px !important;
+    outline: none;
+    color: #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    align-items: center;
+    background-color: black;
+    .ant-dropdown-menu-item:hover {
+      background-color: #edcec5 !important;
+      border-radius: 0px !important;
+    }
+    .ant-dropdown-menu-item {
+      padding-right: 30px;
+      border-radius: 0px !important;
+      margin-bottom: 2px;
+      border-left: 32px solid #800980;
+      background-color: #e8b5bc;
+    }
+  }
+}

@@ -1,0 +1,487 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins";
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  overflow-x: hidden !important;
+}
+.bgCol {
+  background-color: white;
+}
+.reviews-container {
+  width: 400px;
+  min-height: fit-content;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .swiper {
+    overflow: hidden !important;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .reviews-container {
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .swiper_text {
+    font-size: 14px;
+  }
+  .accordionClass {
+    .ant-collapse
+      > .ant-collapse-item
+      > .ant-collapse-header
+      .ant-collapse-header-text {
+      font-size: large !important;
+    }
+  }
+}
+@media only screen and (max-width: 786px) {
+  .react-tel-input .form-control {
+    width: 45vh !important;
+  }
+}
+@media only screen and (min-width: 786px) {
+  .react-tel-input .form-control {
+    width: 55vh !important;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .react-tel-input .form-control {
+    width: 35vh !important;
+  }
+  .swiper_text {
+    font-size: 9px;
+  }
+  .swiper {
+    overflow: hidden !important;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+  p {
+    font-size: 13px !important;
+  }
+  .accordionClass {
+    .ant-collapse
+      > .ant-collapse-item
+      > .ant-collapse-header
+      .ant-collapse-header-text {
+      font-size: medium !important;
+    }
+  }
+}
+a {
+  text-decoration: none !important;
+  /* color: #800980; */
+}
+p {
+  font-size: 15px !important;
+}
+a:hover {
+  /* color: #040004 !important; */
+  text-decoration: none !important;
+}
+
+.shadowClass {
+  box-shadow: inset 30px 0 20px -4px #b18288, inset -30px 0 20px -4px #b18288;
+}
+.shadowClassOuter {
+  box-shadow: 2px 2px 8px 4px #b18288, -2px -2px 8px 4px #b18288,
+    -2px 2px 8px 4px #b18288, 2px -2px 8px 4px #b18288;
+}
+.shadowClassContact {
+  box-shadow: 2px 2px 8px 4px #b18288, -2px -2px 8px 4px #b18288,
+    -2px 2px 8px 4px #b18288, 2px -2px 8px 4px #b18288;
+}
+.button {
+  background-color: #9400d3;
+  border: none;
+  color: white !important;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.test:hover {
+  color: black;
+}
+
+.swiper-slide img {
+  display: block;
+}
+.swiper {
+  width: 90%;
+  max-width: 1400px !important;
+  max-height: 400px;
+}
+.carousal {
+  min-height: 200px;
+  position: relative;
+  max-height: 500px;
+  max-width: 100%;
+}
+.active {
+  color: #b80db8 !important;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e8b5bc;
+}
+.swiper_text {
+  width: 80%;
+  border-radius: 15px;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  bottom: 12%;
+  text-align: center;
+  left: 10%;
+  font-style: italic;
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item:hover {
+  background-color: #e8b5bc !important;
+  border-radius: 0px !important;
+}
+.ant-dropdown .ant-dropdown-menu .ant-dropdown-menu-item {
+  padding-right: 30px;
+  color: #800980;
+  text-decoration: none !important;
+}
+.ant-dropdown .ant-dropdown-menu {
+  background-color: #edcec5 !important;
+  width: 40vh !important;
+  list-style-type: none;
+  background-clip: padding-box;
+  margin: 0px !important;
+  padding: 0px !important;
+  border-radius: 0px !important;
+  outline: none;
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+    0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+.slick-dots li button:before {
+  content: "" !important;
+}
+.slick-prev:before {
+  content: "" !important;
+}
+.slick-next:before {
+  content: "" !important;
+}
+.ant-carousel .slick-prev::after {
+  width: 20px;
+  height: 20px;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+}
+.ant-carousel .slick-next::after {
+  width: 20px;
+  height: 20px;
+  border: 0px;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+}
+.ant-carousel .slick-next::after {
+  transform: rotate(-45deg);
+}
+.ant-carousel .slick-next {
+  padding: 10px;
+}
+.accordionClass {
+  .ant-collapse .ant-collapse-content > .ant-collapse-content-box {
+    padding: 16px 16px;
+    background-color: #e8b5bc;
+    color: #800980;
+  }
+  .ant-collapse > :nth-child(n) > :first-child {
+    display: "flex";
+    align-items: "center";
+  }
+  .ant-collapse {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #800980;
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 3px solid #e8b5bc;
+    border-radius: 8px;
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    align-items: center;
+  }
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-header-text {
+    margin-inline-end: auto;
+    color: #800980;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8b5bc;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.225em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: transform 0.3s;
+    font-size: large;
+  }
+}
+.accordionClassChild {
+  .ant-collapse .ant-collapse-content > .ant-collapse-content-box {
+    padding: 16px 16px;
+    background-color: #9c219c;
+    color: white;
+  }
+  .ant-collapse {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #9c219c;
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 3px solid #9c219c;
+    border-radius: 8px;
+  }
+  .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+    align-items: center;
+  }
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-header-text {
+    margin-inline-end: auto;
+    color: #771d77;
+    font-size: large;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .ant-collapse
+    > .ant-collapse-item
+    > .ant-collapse-header
+    .ant-collapse-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9c219c;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -0.225em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: transform 0.3s;
+    font-size: large;
+  }
+}
+.react-tel-input .form-control {
+  position: relative;
+  font-size: 16px !important;
+  letter-spacing: 0rem;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 40px;
+  margin-left: 0;
+  background: #ffffff;
+  border: 2px solid #9c219c !important;
+  border-radius: 4px !important;
+  line-height: 0px !important;
+  height: 35px;
+  outline: none;
+}
+.react-tel-input .selected-flag {
+  outline: none;
+  position: relative;
+  width: 38px;
+  height: 40px !important;
+  padding: 0 0 0 8px;
+  border-radius: 0px 0 0 0px !important;
+  border: 2px solid #9c219c !important;
+  background-color: #edcec5;
+  z-index: 1;
+}
+input,
+select {
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+}
+
+.floating-label-group {
+  position: relative;
+
+  .floating-label {
+    font-size: 16px;
+    color: #8b888c;
+    position: absolute;
+    pointer-events: none;
+    top: 8px;
+    left: 12px;
+    background-color: #edcec5;
+    height: fit-content;
+    transition: all 0.1s ease;
+  }
+  input,
+  select,
+  textarea {
+    padding: 0px 12px;
+    border: 2px solid #9c219c;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #edcec5;
+    min-height: 40px;
+  }
+  textarea {
+    padding: 6px 12px;
+    border: 2px solid #9c219c;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #edcec5;
+    height: 60px !important;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none !important;
+    box-shadow: 1px 1px 2px #9c219c;
+  }
+  input:focus ~ .floating-label,
+  input:not(:focus):valid ~ .floating-label,
+  textarea:focus ~ .floating-label,
+  textarea:not(:focus):valid ~ .floating-label {
+    top: -22px;
+    bottom: 0px;
+    left: 12px;
+    font-size: 18px;
+    opacity: 1;
+    color: #800980;
+  }
+}
+.ant-select {
+  min-height: 40px;
+  font-size: medium;
+  overflow: hidden;
+}
+.ant-select-selector {
+  cursor: pointer;
+}
+.ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  background: #edcec5;
+  border: 2px solid #9c219c;
+}
+.ant-select-multiple .ant-select-selection-wrap {
+  display: flex;
+  align-self: center !important;
+}
+.ant-select-multiple .ant-select-selector {
+  border-radius: 4px;
+}
+.ant-select-outlined:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer):hover
+  .ant-select-selector {
+  border: 2px solid #9c219c;
+  box-shadow: 1px 1px 2px #9c219c;
+}
+.ant-select .ant-select-selection-placeholder {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 1;
+  color: #8b888c;
+}
+.ant-select-focused:where(
+    .css-dev-only-do-not-override-nqoqt9
+  ).ant-select-outlined:not(.ant-select-disabled):not(
+    .ant-select-customize-input
+  ):not(.ant-pagination-size-changer)
+  .ant-select-selector {
+  border: 2px solid #9c219c;
+  box-shadow: 1px 1px 2px #9c219c;
+  outline: 0;
+}
+.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled)
+  .ant-select-item-option-state {
+  color: #9c219c;
+}
+.ant-select-dropdown {
+  background-color: #edcec5;
+  border-radius: 4px;
+}
+.ant-select-dropdown
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  background-color: #f9e5e0;
+}
+:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.6;
+}
